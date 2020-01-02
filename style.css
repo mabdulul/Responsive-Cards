@@ -1,0 +1,84 @@
+.picbox {
+    display: flex;
+}
+
+.picbox div {
+    padding: 20px;
+    position: absolute;
+}
+
+@media (min-width: 992px) {
+    .picbox div {
+        padding: 20px;
+        position: relative;
+
+    }
+
+    .card-out {
+        display: none;
+    }
+}
+
+.box-three p {
+    background-color: blue;
+    z-index: 2;
+}
+
+.box-two p {
+    background-color: black;
+}
+
+.box-one p {
+    background-color: green;
+}
+
+.card-out {
+
+    height: 500px;
+    width: 280px;
+    /* right: 2px; */
+    top: 20px;
+    cursor: pointer;
+    z-index: -1;
+    border-radius: 10%;
+
+
+}
+
+.card-out-orange {
+    background-color: #FF5C00;
+    left: 30px;
+}
+
+.card-out-yello {
+    background-color: #FFDC00;
+    left: 45px;
+}
+
+div.box-three {}
+
+div.box-two {
+    /* left: 80px; */
+
+}
+
+div.box-one {
+    /* left: 110px; */
+}
+
+
+
+.picbox img {
+    border-radius: 10%;
+}
+
+.picbox p {
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    font-size: 35px;
+
+    padding: 10px;
+    font-weight: 600;
+
+}
