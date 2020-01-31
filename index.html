@@ -1,73 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="picbox">
-        <div class="box card-out card-out-yello">
-          <p>BlackCard</p>
-        </div>
-        <div class="box card-out card-out-orange">
-          <p>BlackCard</p>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav class="container navSearch">
+			<h4>Second Education</h4>
+			<span
+				class="fi-magnifying-glass iconic-lg"
+				title="magnifying glass"
+				aria-hidden="true"
+			></span>
+		</nav>
+		<header class="container header">
+			<div class="header_boxes row">
+				<div class="col-sm-12 col-md-12 col-lg-12"></div>
+				<h1>Becoming a part of change</h1>
+				<div class=" header_container header_boxes--yellow">
+					<p class="box1">Webinars</p>
+					<p class="box2">The Blog</p>
+				</div>
+				<div class=" header_container header_boxes--orange">
+					<p>Graduates and students</p>
+				</div>
+				<div class=" header_container header_boxes--white">
+					<p class="box1">Directions</p>
+					<p class="box2">
+						<img
+							width="80px"
+							height="80px"
+							src="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/av/1x_web/ic_play_circle_outline_black_48dp.png"
+							alt="the play button"
+						/>
+					</p>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<p class="header-info">
+						What if? In our reality, one idea, thought, word or decision can
+						change not only the product, also change the idea of technology,
+						service and is capabilities. Everyone can be part of the change.
+					</p>
+				</div>
+			</div>
+		</div>
+		<section class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="picbox">
+						<div class="box test card-out card-out-yello"></div>
+						<div class="box test card-out card-out-orange"></div>
+						<div class="box test box-one">
+							<img
+								class="img-fluid"
+								src="http://placeimg.com/200/200/any/sepia"
+							/>
+							<h3>Noah Slee is neo-soul singer songwriter with Tongan roots</h3>
+						</div>
+						<div class="box test  box-two">
+							<img class="img-fluid" src="http://placeimg.com/200/200/people" />
+							<h3>
+								<span class="box-num">43</span><br />
+								<span class="box-text"
+									>online course for people with strong motivation</span
+								>
+							</h3>
+						</div>
+						<div class="box test box-three">
+							<img class="img-fluid" src="http://placeimg.com/200/200/any" />
+							<h3 class="box-small-text">
+								A commerical illustraion can be minimalist and created using a
+								single liner or voluminous and bright created in 3d-graphics
+								program.
+							</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <div class="box box-one">
-          <img src="http://placeimg.com/250/250/any/sepia" />
-          <p>Card 3</p>
-        </div>
-        <div class="box box-two">
-          <img src="http://placeimg.com/250/250/people" />
-          <p>Card 2</p>
-        </div>
+		<div class="container-fluid anothername">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<p class="header-info">
+						What if? In our reality, one idea, thought, word or decision can
+						change not only the product, also change the idea of technology,
+						service and is capabilities. Everyone can be part of the change.
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		let count = 0;
+		let topZ = 2;
+		$(".card-out , .test").click(function() {
+			console.log("here");
+			let constCards = [".box-two", ".box-one", ".box-three"];
+			var thisZ = parseInt($(this).css("z-index"), 10);
+			console.log("thisZ", thisZ); //2
 
-        <div class="box box-three">
-          <img src="http://placeimg.com/250/250/any" />
-          <p>Card 1</p>
-        </div>
-      </div>
-    </div>
-  </body>
-  <script>
-    let count = 0;
-    let topZ = 2;
-    $(".card-out").click(function() {
-      let constCards = [".box-two", ".box-one", ".box-three"];
-      var thisZ = parseInt($(this).css("z-index"), 10);
-      console.log("thisZ", thisZ); //2
-
-      if (thisZ > topZ && count < constCards.length) {
-        count += 1;
-        topZ += 5;
-        $(` ${constCards[count]} `).css("z-index", thisZ);
-      } else if (thisZ < topZ && count < constCards.length) {
-        $(` ${constCards[count]} `).css("z-index", topZ);
-        topZ += 5;
-        count += 1;
-      } else {
-        count = 0;
-      }
-    });
-  </script>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"
-  ></script>
+			if (thisZ > topZ && count < constCards.length) {
+				count += 1;
+				topZ += 5;
+				$(` ${constCards[count]} `).css("z-index", thisZ);
+			} else if (thisZ < topZ && count < constCards.length) {
+				$(` ${constCards[count]} `).css("z-index", topZ);
+				topZ += 5;
+				count += 1;
+			} else {
+				count = 0;
+			}
+		});
+	</script>
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"
+	></script>
 </html>

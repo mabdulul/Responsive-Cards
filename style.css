@@ -1,5 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Gelasio:400,500,600,700&display=swap");
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+.navSearch {
+    justify-content: space-between;
+    top: 10px;
+    position: relative;
+    display: flex;
+    padding-top: 10px;
+}
+
+.navSearch h4 {
+    font-weight: 700;
+}
+
+.header {
+    margin-top: 22px;
+    margin-bottom: 50px;
+}
+
+.header_boxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 992px) {
+    .header_boxes {
+        width: 60%;
+    }
+}
+
+.header h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.header_container {
+    flex-basis: 100%;
+    display: flex;
+    position: relative;
+    padding: 40px;
+    font-weight: 700;
+}
+
+/* Orange */
+.header_boxes--orange {
+    justify-content: flex-end;
+}
+
+.header_boxes--orange p {
+    position: absolute;
+    top: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 235px;
+    height: 100%;
+    text-align: center;
+}
+
+.header_boxes--orange p {
+    right: 0px;
+    background-color: #ff5c00;
+}
+
+@media (min-width: 992px) {
+    .header_boxes--orange {
+        justify-content: center;
+    }
+
+    .header_boxes--orange p {
+        right: auto;
+    }
+
+    .header_boxes--orange p {
+        width: 45%;
+    }
+}
+
+/* Yellow */
+.header_boxes--yellow {
+    justify-content: space-between;
+    position: relative;
+}
+
+.header_boxes--yellow p {
+    position: absolute;
+    top: 0;
+    padding-top: 30px;
+    height: 100%;
+    width: 35%;
+    text-align: center;
+}
+
+.header_boxes--yellow .box1 {
+    left: 0px;
+    margin-right: 30px;
+    background-color: #ffdc00;
+}
+
+.header_boxes--yellow .box2 {
+    right: 0px;
+    margin-left: 30px;
+    background-color: #00acff;
+}
+
+/* White Box */
+.header_boxes--white {
+    justify-content: space-between;
+    position: relative;
+}
+
+.header_boxes--white .box1 {
+    position: absolute;
+    top: 0;
+    padding-top: 30px;
+    height: 100%;
+    text-align: center;
+}
+
+.header_boxes--white .box2 {
+    position: absolute;
+    top: 0;
+}
+
+.header_boxes--white .box1 {
+    left: 0px;
+    margin-right: 30px;
+    width: 35%;
+    border: 3px solid black;
+}
+
+.header_boxes--white .box2 {
+    right: 0px;
+    margin-left: 30px;
+    display: flex;
+}
+
+.header-info {
+    font-size: 1.5rem;
+    font-family: "Gelasio", serif;
+    font-weight: 500;
+    letter-spacing: 1.6;
+}
+
+/** Metric Box **/
+
+/** PicBox **/
 .picbox {
     display: flex;
+    justify-content: flex-start;
+    /*   justify-content: center; */
+    position: relative;
 }
 
 .picbox div {
@@ -7,10 +165,26 @@
     position: absolute;
 }
 
-@media (min-width: 992px) {
+.anothername {
+    position: relative;
+    top: 500px;
+    background-color: #00ACFF
+}
+
+@media (min-width: 768px) {
     .picbox div {
         padding: 20px;
         position: relative;
+
+    }
+
+    .picbox {
+        justify-content: center;
+    }
+
+    .anothername {
+
+        top: 50px;
 
     }
 
@@ -19,23 +193,29 @@
     }
 }
 
-.box-three p {
-    background-color: blue;
-    z-index: 2;
+.box-three h3 {
+    background-color: #00ACFF;
+    font-size: 1rem;
+    font-family: 'Gelasio', serif;
+
 }
 
-.box-two p {
-    background-color: black;
+
+
+.box-two h3 {
+    background-color: #FF5C00;
 }
 
-.box-one p {
-    background-color: green;
+.box-one h3 {
+    background-color: #FFDC00;
+    font-size: 1.6rem;
+
 }
 
 .card-out {
 
-    height: 500px;
-    width: 280px;
+    height: 400px;
+    width: 150px;
     /* right: 2px; */
     top: 20px;
     cursor: pointer;
@@ -45,25 +225,26 @@
 
 }
 
+
+
 .card-out-orange {
     background-color: #FF5C00;
-    left: 30px;
+    right: 55px;
 }
 
 .card-out-yello {
     background-color: #FFDC00;
-    left: 45px;
+    right: 35px;
 }
 
-div.box-three {}
-
-div.box-two {
-    /* left: 80px; */
-
+.box-num {
+    font-size: 3rem;
 }
 
-div.box-one {
-    /* left: 110px; */
+.box-text {
+    font-size: 1.2rem;
+    font-family: 'Gelasio', serif;
+
 }
 
 
@@ -72,13 +253,19 @@ div.box-one {
     border-radius: 10%;
 }
 
-.picbox p {
-    width: 250px;
-    height: 250px;
+.picbox h3 {
+    width: 200px;
+    height: 200px;
     border-radius: 10%;
-    font-size: 35px;
 
-    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
     font-weight: 600;
 
 }
+
+@media (min-width: 992px) {}
